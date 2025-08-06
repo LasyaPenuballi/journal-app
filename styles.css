@@ -1,0 +1,82 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #f4f1ea;
+  color: #3e3e3e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid #d3cbb8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+textarea,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #d3cbb8;
+  border-radius: 8px;
+  font-family: inherit;
+  background: #fcfbf7;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background: #8b5e3c;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background: #7a4d2e;
+}
+
+.entry {
+  background: #fcfbf7;
+  border-left: 4px solid #d3cbb8;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.entry h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.entry small {
+  color: #999;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.entry p {
+  white-space: pre-wrap;
+}
+
+label {
+  font-weight: bold;
+}

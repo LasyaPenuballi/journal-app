@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Journal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+<button onclick="logout()" style="float: right;">Logout</button>
+    <h1>📅 Journal for <span id="today-date"></span></h1>
+    <div>
+  <label for="entry-date">📅 Select date:</label>
+  <input type="date" id="entry-date">
+</div>
+
+    <form id="entry-form">
+      <input type="hidden" id="edit-index" value="">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="content" placeholder="Write your journal here..." required></textarea>
+      <button type="submit">Save Entry</button>
+    </form>
+
+    <h2>Previous Entries</h2>
+    <div id="entries"></div>
+  </div>
+
+  <script src="script.js"></script>
+<script>
+  // Format today's date as "Month Day, Year"
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const todayFormatted = new Date().toLocaleDateString('en-US', options);
+  document.getElementById("today-date").textContent = todayFormatted;
+</script>
+
+
+</body>
+</html>
